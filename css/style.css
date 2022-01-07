@@ -18,7 +18,7 @@ img {
 }
 
 body {
-	font-family: 'font', sans-serif;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
 .main-content {
@@ -38,15 +38,36 @@ header {
 
 .links {
   margin-bottom: 3.125em;
+
 }
 
-.links a {
+.link {
   display: inline-block;
   padding: 1.5em 3.0625em;
+
+  background-color: #3f2aff;
 }
 
-.links a:not(:last-child) {
+
+.link:not(:last-child) {
   margin-right: 1.5625em;
 }
 
+.link-style {
+  font-weight: 700;
+  font-size: 18px;
+
+  color: #fff;
+}
+
+.downloader {
+  background-image: url('/img/download.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+
+  color: #3f2aff;
+
+  padding-left: 30px;
+}
 
