@@ -21,6 +21,10 @@ body {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
+.main__color {
+  color: #3f2aff;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -66,8 +70,40 @@ body {
   background-position: left center;
   background-size: contain;
 
-  color: #3f2aff;
-
   padding-left: 30px;
 }
 
+/* MODULES PAGE */
+
+.main-container {
+  max-width: 1170px;
+
+  margin: 0 19.53125%;
+  padding-top: 50px;
+
+}
+
+.header_modules {
+  margin-bottom: 50px;
+}
+
+.logo {
+  margin-bottom: 25px;
+  display: block;
+}
+
+.link_to_main_page {
+  display: inline-block;
+
+  background-image: url('/img/arrow_right.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  padding-left: 50px;
+  margin-bottom: 25px;
+}
+
+.main_headline_modules {
+  margin: 0;
+  font-size: 60px;
+}
