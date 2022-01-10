@@ -107,3 +107,16 @@ body {
   margin: 0;
   font-size: 60px;
 }
+
+.card_module_list {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+}
+
+.card_module_item {
+  display: inherit;
+  max-width: 572px;
+  max-height: 325px;
+}
