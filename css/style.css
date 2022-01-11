@@ -18,7 +18,12 @@ img {
 }
 
 body {
-	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+  background-color:#E5E5E5;
+}
+
+li {
+  list-style: none;
 }
 
 .main__color {
@@ -76,11 +81,10 @@ body {
 /* MODULES PAGE */
 
 .main-container {
+  margin: 0 auto;
+  padding: 50px 0;
+
   max-width: 1170px;
-
-  margin: 0 19.53125%;
-  padding-top: 50px;
-
 }
 
 .header_modules {
@@ -109,14 +113,102 @@ body {
 }
 
 .card_module_list {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 
-  margin: 0;
+
+  margin: 0 0 50px 0;
   padding: 0;
 }
 
 .card_module_item {
-  display: inherit;
-  max-width: 572px;
-  max-height: 325px;
+  width: 572px;
+  min-height: 505px;
+  position: relative;
+
+  margin-bottom: 25px;
+
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+}
+
+.bg_image_card_1 {
+  background-image: url('/img/image_header_module_list_item_1.jpg');
+}
+
+.bg_image_card_2 {
+  background-image: url('/img/image_header_module_list_item_2.jpg');
+}
+
+.bg_image_card_3 {
+  background-image: url('/img/image_header_module_list_item_3.jpg');
+}
+
+.bg_image_card_4 {
+  background-image: url('/img/image_header_module_list_item_4.jpg');
+}
+
+.card_module_item:not(:nth-child(even)) {
+  margin-right: 25px;
+}
+
+.card_module_item:nth-child(3), .card_module_item:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.headline_card_module {
+  font-size: 25px;
+  line-height: 46px;
+  margin: 0;
+}
+
+.transfers {
+  padding: 0;
+}
+
+.transfer {
+  font-size: 20px;
+  line-height: 165%;
+}
+
+.transfers_wrapper {
+  padding: 25px;
+  padding-top: calc(180px + 25px);
+
+}
+
+.number_module {
+  display: inline;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 40px;
+  line-height: 46px;
+
+  color: #EAEAEA;
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_show_more {
+  padding: 25px 75px;
+
+  background: inherit;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  border: 2px solid #3F2AFF;
 }
