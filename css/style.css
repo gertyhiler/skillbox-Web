@@ -19,7 +19,6 @@ img {
 
 body {
 	font-family: Arial, Helvetica, Verdana, sans-serif;
-  background-color:#E5E5E5;
 }
 
 li {
@@ -39,7 +38,7 @@ li {
   min-height: 100vh;
 
   color: #fff;
-  
+
   background-color: #070217;
 }
 
